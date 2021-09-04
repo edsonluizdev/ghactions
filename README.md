@@ -19,3 +19,18 @@ You can use one or multiple events using brackets.
 on: push
 on: [push, pull_request]
 ```
+
+## Jobs and steps
+- Workflows must have at least one job.
+- Each job must have a unique identifier.
+- Job identifier must start with a letter or underscore.
+- Jobs run in parallel by default.
+- We need to specify the compute resource GitHub will use to run each job with `runs-on`
+  - windows-latest
+  - ubuntu-latest
+  - macos-latest
+
+## Steps
+- Steps are tasks within a job.
+- Steps run as process on the compute resource (ubuntu, windows, macos)
+- Steps can run commands or actions.
