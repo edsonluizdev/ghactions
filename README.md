@@ -44,3 +44,7 @@ on: [push, pull_request]
 - `bash`: Default shell for Ubuntu and macOS.
 - `PowerShell`: Default shell for Windows.
   ![command](.github/assets/0002.png)
+
+## Adding dependencies
+- `needs`: Indentifies one or more jobs that must complete successfully before a job will run.
+  ![command](.github/assets/0003.png)
