@@ -34,3 +34,13 @@ on: [push, pull_request]
 - Steps are tasks within a job.
 - Steps run as process on the compute resource (ubuntu, windows, macos)
 - Steps can run commands or actions.
+
+## Adding an action
+- `uses`: Execute an action in the operating system.
+  ![action location](.github/assets/0001_actions.png)
+
+## Adding command to workflow
+- `run`: Execute commands in the operationg system's shell.
+- `bash`: Default shell for Ubuntu and macOS.
+- `PowerShell`: Default shell for Windows.
+  ![command](.github/assets/0002.png)
